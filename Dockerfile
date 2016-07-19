@@ -13,7 +13,7 @@ RUN 		curl http://repos.sensuapp.org/apt/pubkey.gpg | apt-key add - && \
 RUN 		apt-get install -y ruby ruby-dev build-essential && \
 			gem install mail --no-ri --no-rdoc -v 2.5.4 && \
 			gem install json --no-ri --no-rdoc -v 1.8.3 && \
-			gem install sensu-plugin --no-ri --no-rdoc
+			gem install sensu-plugin --no-ri --no-rdoc -v 1.2.0
 
 VOLUME 		/etc/sensu/conf.d
 VOLUME 		/etc/sensu/handlers
